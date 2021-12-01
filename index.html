@@ -21,13 +21,13 @@
     <!-- Div is used to meet accessibility standard WAI ARIA-->
 
 
-  <div class="card">
+  <div class="my-5 py-5 ">
       <nav id="nav" >
-        <div class="nav nav-tabs justify-content-center " id="nav-tab" role="tablist">
+        <div class="nav nav-tabs justify-content-center mx-auto" id="nav-tab" role="tablist" style="width:75%">
           <!--javascript fucntion should be created that adds show and active class to
         the arcticle clicked and removes show and active from the previous -->
   				<button class="nav-item nav-link active text-white bg-dark" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="home" type="button" role="tab" aria-controls="home" aria-selected="true"><i id="home-image" class="bi-house-door-fill"></i></button>
-  				<button href="#websites" class="nav-item nav-link" id="nav-website-tab" data-bs-toggle="tab" data-bs-target="websites" type="button" role="tab" aria-controls="websites" aria-selected="false"><span>Websites</span></button>
+  				<button class="nav-item nav-link " id="nav-website-tab" data-bs-toggle="tab" data-bs-target="websites" type="button" role="tab" aria-controls="websites" aria-selected="false">Websites</button>
   				<button href="#art-projects" class="nav-item nav-link" id="nav-art-tab" data-bs-toggle="tab" data-bs-target="art-projects" type="button" role="tab" aria-controls="art-projects" aria-selected="false"><span>Art Projects</span></button>
   				<button href="#contact" class="nav-item nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="contact" type="button" role="tab" aria-controls="contact" aria-selected="false"><span>Contact</span></button>
         </div>
@@ -35,14 +35,16 @@
 
       <!--Each hyperlink above has its own article that should only be visible
         after the link has been pressed  -->
-      <div class="tab-content card-body text-white bg-dark border border-dark " id="nav-tabContent">
+      <div class="card-body text-center tab-content text-white bg-dark mx-auto" id="nav-tabContent" style="width:75%">
         <article class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="nav-home-tab">
           <header>
-            <h1>Kojo Nimako</h1>
-            <p>Developer</p>
+            <h1 class="card-titlet">Kojo Nimako</h1>
+            <h6 class="card-subtitle">Developer</h6>
           </header>
-          <img src="profile.png" alt="Kojo Nimako's Profile Pic" style="width:100%">
-
+          <picture>
+            <!-- my-4 is padding-->
+            <img id="profile" src="profile.png" alt="Kojo Nimako's Profile Pic" class="img-fluid rounded-pill my-4" style="max-width: 10%; max-height: 10%">
+          </picture>
         </article>
 
         <!-- Aligned 3 sections vertically on desktop, horizontally on mobile-->

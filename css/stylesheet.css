@@ -1,11 +1,25 @@
 button {
   box-shadow: none;
   font-size: 20px;
-
+  color: black !important;
+}
+/*
+take this part out if you want retro look
+*/
+div>nav>div>button {
+  border-color: black !important;
+  border-bottom: 0px !important;
+  border-right: 0px !important;
+  border-left: 0px !important;
+  border-top: 0px !important;
 }
 
-div>nav>div>button:focus, div>nav>div>button:hover {
+div>nav>div>button:focus, div>nav>div>button:visited, div>nav>div>button:hover, div>nav>div>button:active {
         text-decoration: none;
         background-color: black !important;
         border-color: black !important;
+        color: white !important;
   }
+#nav-tabContent {
+  border-radius: 5px;
+}
