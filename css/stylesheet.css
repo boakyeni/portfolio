@@ -1,0 +1,11 @@
+button {
+  box-shadow: none;
+  font-size: 20px;
+
+}
+
+div>nav>div>button:focus, div>nav>div>button:hover {
+        text-decoration: none;
+        background-color: black !important;
+        border-color: black !important;
+  }
