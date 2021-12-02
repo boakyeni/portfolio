@@ -1,13 +1,4 @@
-let app = new Vue({
-  el: '#app',
-  data: {
-    alert: "This is an alert message",
-    projects: [
-      {title: "portfolio", desc: "stuff"},
-      {title: "twitter clone", desc: "Lorem ipsn"}
-    ]
-    }
-});
+
 
 function navClick(link){
   /*
@@ -23,3 +14,40 @@ function navClick(link){
   }
   document.getElementById(link).className += "show active";
 }
+
+
+/*
+This is the timeline for the animations on the home screen
+*/
+function homeTimeline(){
+  var timeline = anime.timeline();
+  timeline.add({
+      targets: '#profile',
+      delay: 1500,
+      translateX: "-350%",
+      easing: 'easeOutQuad'
+    });
+    /*
+    Element is added to the dom but cannot be seen until placed to proper
+    position
+    */
+    addInvisibleDOM();
+    timeline.add({
+      targets: "#home-message",
+      translateY: "-500%"
+    });
+    /*
+    Once element is in place this function fades in the element
+    */
+    makeVisibleDOM();
+}
+
+function addInvisibleDOM(){
+
+}
+
+function makeVisibleDOM(){
+
+}
+
+document.addEventListener("DOMContentLoaded", homeTimeline);
