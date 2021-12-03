@@ -22,4 +22,5 @@ div>nav>div>button:focus, div>nav>div>button:visited, div>nav>div>button:hover, 
   }
 #nav-tabContent {
   border-radius: 5px;
+  background-color: black !important;
 }
